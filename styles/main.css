@@ -1,0 +1,71 @@
+/* black #1A1423
+    deep red #6D0303
+    blue highlight #0085A0
+    platinum #E3E4DB
+    white #FFFFFF
+ */
+
+body{
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    margin: 0;
+}
+
+nav, footer{
+    background-color: #6D0303;
+    height: 15vh;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 2em;
+}
+
+footer{
+    margin-top: 10px;
+}
+
+nav ul {
+    padding-top: 7vh;
+}
+
+nav ul li {
+    padding-right: 10px;
+}
+
+.divider{
+    margin-top: 10px;
+    border-top: 5px #6D0303 solid;
+}
+.logo {
+    width: auto;
+    height: 100%;
+}
+
+.wrapper{
+    margin: 30px;
+    padding: 30px;
+}
+
+@media (min-width: 1000px) {
+    .nav-links{
+        float: right;
+        list-style: none;
+        display: inline-block;
+    }
+
+    .nav-links li{
+        display: inline-block;
+    }
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+
+@media screen {
+    .screen-reader-only{
+        display: none;
+    }
+}
+
