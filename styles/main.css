@@ -1,5 +1,5 @@
 /* black #1A1423
-    deep red #6D0303
+    deep red #A30404
     blue highlight #0085A0
     platinum #E3E4DB
     white #FFFFFF
@@ -9,31 +9,58 @@ body{
     font-family: 'Roboto Slab', serif;
     font-size: 15px;
     margin: 0;
+    background-color: #FFFFFF;
 }
 
 nav, footer{
-    background-color: #6D0303;
+    background-color: #184153;
     height: 15vh;
     padding: 15px;
     color: #FFFFFF;
     font-size: 2em;
 }
 
-footer{
-    margin-top: 10px;
+
+.navbar .links-container{
+    display: table;
+    position: absolute;
+    top: 5vh;
+    right: 0;
+    height: 100px;
+    color: white;
+    text-decoration: none;
 }
 
-nav ul {
-    padding-top: 7vh;
+.links-container .navbar-link{
+    display: table-cell;
+    position: relative;
+    height: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    vertical-align: middle;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-nav ul li {
-    padding-right: 10px;
+.links-container .navbar-link:hover {
+    color: rgb(209,209,209);
+}
+
+
+.links-container .navbar-link:active {
+    background-color:white;
+    color: rgb(29, 65, 163);
 }
 
 .divider{
-    margin-top: 10px;
-    border-top: 5px #6D0303 solid;
+    margin-top: 5px;
+    height: 2px;
+    background-color: #184153;
 }
 .logo {
     width: auto;
@@ -41,8 +68,24 @@ nav ul li {
 }
 
 .wrapper{
-    margin: 30px;
+    background-image: url("../assets/poutine.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 5px 0;
+}
+
+.contact-form{
+    background-color: rgba(255,255,255, 0.9);
+    width: 50vw;
+    margin: 30px auto;
     padding: 30px;
+
+}
+
+.form-group{
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1.25em;
 }
 
 @media (min-width: 1000px) {
@@ -54,12 +97,6 @@ nav ul li {
 
     .nav-links li{
         display: inline-block;
-    }
-
-    .wrapper{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
     }
 }
 
