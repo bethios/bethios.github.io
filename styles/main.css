@@ -14,7 +14,6 @@ nav, footer{
     font-size: 2em;
 }
 
-
 .navbar .links-container{
     display: table;
     position: absolute;
@@ -48,20 +47,20 @@ nav, footer{
 
 .links-container .navbar-link:active {
     background-color:white;
-    color: rgb(29, 65, 163);
+    color: #184153;
 }
 
 .divider{
     margin-top: 5px;
     height: 2px;
-    background-color: #184153;
+    background-color: #ad4a02;
 }
+
 .logo {
     width: auto;
     max-height: 100%;
     max-width: 50%;
 }
-
 
 .wrapper{
     background-image: url("../assets/poutine.jpg");
@@ -93,7 +92,8 @@ input, textarea{
 
 h2{
     font-size: 2em;
-    padding-left: 5px;
+    padding: 5px;
+    border-bottom: 2px #ad4a02 solid
 }
 
 .form-instructions{
@@ -105,7 +105,6 @@ h2{
     background-color: #184153;
     color: white;
     padding-top: 10px;
-    border-radius: 5%;
 }
 
 @media (min-width: 768px) {

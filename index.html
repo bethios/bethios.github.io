@@ -25,11 +25,10 @@
     <div class="wrapper">
         <div class="divider"></div>
         <div class="divider"></div>
-        <div class="contact-form">
-            <form action="" method="post">
-                <h2>Contact Us</h2>
-                <div class="divider"></div>
 
+        <div class="contact-form">
+            <form action="contact.php" method="post" role="form" id="contact-form">
+                <h2>Contact Us</h2>
                 <p class="form-instructions"><em>All fields are required.</em></p>
                 <div class="form-group">
                     <label for="name" class="screen-reader-only">Name:</label>
@@ -44,11 +43,12 @@
                     <input type="email" name="email" id="email" placeholder="Email Address" required="required">
                 </div>
                 <div class="form-group">
-                    <label for="comments" class="screen-reader-only">Comments:</label>
-                    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Your Comments" required="required"></textarea>
+                    <label for="message" class="screen-reader-only">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required="required"></textarea>
                 </div>
                 <div class="form-group">
-                    <input type='submit' id="submit">
+                    <input id="submit" name="submit" type="submit" value="Send" >
+
                 </div>
             </form>
         </div>
@@ -58,6 +58,10 @@
 <footer>
 
 </footer>
-
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="scripts/validator.js"></script>
+    <script src="scripts/contact.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </body>
 </html>
