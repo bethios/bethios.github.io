@@ -14,7 +14,7 @@
 <body>
     <nav class="navbar">
         <a href="index.html">
-        <img class="logo" src="assets/Twin-City-Grill-white.png" alt="Logo for Twin City Grill, blank and white font">
+        <img class="logo" src="assets/Twin-City-Grill-white.png" alt="Twin City Grill, white blocky serif font">
         <h1 class="screen-reader-only">Twin City Grill</h1>
         </a>
         <div class="links-container">
@@ -26,8 +26,13 @@
         <div class="divider"></div>
         <div class="divider"></div>
 
+        <?php
+        $action=$_REQUEST['action'];
+        if ($action=="")    /* display the contact form */
+            {
+        ?>
         <div class="contact-form">
-            <form action="mailer.php" method="post" role="form" id="contact-form">
+            <form action="" method="post" role="form" id="contact-form">
                 <h2>Contact Us</h2>
                 <p class="form-instructions"><em>All fields are required.</em></p>
                 <div id="form-messages"></div>
@@ -53,6 +58,25 @@
                 </div>
             </form>
         </div>
+        <?php
+        }
+        else
+            {
+            $name=$_REQUEST['name'];
+            $email=$_REQUEST['email'];
+            $message=$_REQUEST['message'];
+            if (($name=="")||($email=="")||($message==""))
+                {
+                echo "All fields are required, please fill <a href=\"\">the form</a> again.";
+                }
+            else{
+                $from="From: $name<$email>\r\nReturn-path: $email";
+                $subject="Message sent using your contact form";
+                mail("bethios@gmail.com", $subject, $message, $from);
+                echo "Email sent!";
+            }
+        }
+        ?>
         <div class="divider"></div>
         <div class="divider"></div>
     </div>
