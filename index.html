@@ -27,9 +27,10 @@
         <div class="divider"></div>
 
         <div class="contact-form">
-            <form action="contact.php" method="post" role="form" id="contact-form">
+            <form action="mailer.php" method="post" role="form" id="contact-form">
                 <h2>Contact Us</h2>
                 <p class="form-instructions"><em>All fields are required.</em></p>
+                <div id="form-messages"></div>
                 <div class="form-group">
                     <label for="name" class="screen-reader-only">Name:</label>
                     <input type="text" name="name" id="name" placeholder="Name" required="required">
@@ -58,10 +59,9 @@
 <footer>
 
 </footer>
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="scripts/validator.js"></script>
-    <script src="scripts/contact.js"></script>
+    <script src="scripts/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </body>
 </html>
