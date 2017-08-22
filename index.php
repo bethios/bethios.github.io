@@ -13,12 +13,12 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="index.html">
+        <a href="index.php">
         <img class="logo" src="assets/Twin-City-Grill-white.png" alt="Twin City Grill, white blocky serif font">
         <h1 class="screen-reader-only">Twin City Grill</h1>
         </a>
         <div class="links-container">
-            <a href="index.html" class="navbar-link">Contact</a>
+            <a href="index.php" class="navbar-link">Contact</a>
         </div>
     </nav>
 
@@ -74,8 +74,6 @@
             $from="From: $name<$email>\r\nReturn-path: $email";
             $subject="Message sent using your contact form";
             mail("bethios@gmail.com", $subject, $message, $from);
-
-
             ?>
                     <h2>Thanks!</h2>
                     <p>We will get back to you as soon as possible. Have a great day!</p>
